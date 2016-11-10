@@ -1,0 +1,20 @@
+.bg-image{
+  background-image: url("./../img/dev2.jpg");
+  background-size: cover;
+  display: block;
+  height: 800px;
+  left: 0;
+  position: fixed;
+  right: 0;
+}
+p.lead{
+  font-size:26px;
+  color:#516DB0;
+}
+.content{
+  background:rgba(164, 169, 165, .70); 
+  border-radius: 5px;
+  padding:10px;
+  margin:10px;
+  z-index: 2px;
+}
