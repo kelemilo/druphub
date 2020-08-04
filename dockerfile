@@ -4,6 +4,7 @@ FROM alpine:3.7
 RUN apk add update \
     && apk add php7 php7-fpm php7-opcache 
 
+COPY . /dir
 
 #create a working directory 
 WORKDIR /public/html
