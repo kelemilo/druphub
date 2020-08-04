@@ -1,15 +1,11 @@
-FROM alpine:3.7
+FROM php:7.2-fpm-alpine
 
-#add php
-RUN apk add update \
-    && apk add php7 php7-fpm php7-opcache 
-
-COPY . /dir
+RUN apk --update add wget 
 
 #create a working directory 
 WORKDIR /public/html
 
-#copy file from my folder to alpine
+#copy file from my folder to image
 COPY . /public/html
 
 ENTRYPOINT [ "./home.php" ]
